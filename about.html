@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu - Lê Thế Đức Trung | Kỹ Năng & Học Tập</title>
+
+    <meta name="description" content="Tìm hiểu thông tin chi tiết về Lê Thế Đức Trung, lịch trình học tập, danh sách môn học chuyên ngành và các kỹ năng lập trình đã tích lũy trong quá trình học.">
+
+    <meta property="og:title" content="Giới Thiệu - Lê Thế Đức Trung | Kỹ Năng & Học Tập">
+    <meta property="og:description" content="Tìm hiểu thông tin chi tiết về Lê Thế Đức Trung và hành trình học tập CNTT.">
+    <meta property="og:type" content="article">
+    
+    <!-- Nhúng Google Font (Inter) đồng bộ toàn bộ website -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Liên kết tới file CSS chung trong thư mục css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Thanh điều hướng chung -->
+    <header>
+        <h1 id="main-title">Le The Duc Trung</h1>
+        <p>Sinh vien nganh Cong nghe thong tin</p>
+        <nav>
+            <a href="index.html">Trang chu</a> | 
+            <a href="about.html">Gioi thieu</a> | 
+            <a href="contact.html">Lien he</a> | 
+            <a href="https://github.com" target="_blank" rel="noopener">GitHub Repo</a>
+        </nav>
+    </header>
+
+    <!-- Khối nội dung chính chính giữa -->
+    <main>
+        <!-- Card 1: Giới thiệu bản thân + Ảnh đại diện + Danh sách định nghĩa kỹ năng (<dl>) -->
+        <div class="card">
+            <section>
+                <h2>Về tôi</h2>
+                <figure style="margin: 16px 0; text-align: center;">
+                    <!-- Sử dụng link ảnh demo mượt mà từ Picsum -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-T1JyZlZZTRPnsrqAaOGHiB4654D1x_pqhBWgaF8uFg&s=10" alt="Ảnh đại diện cá nhân của Lê Thế Đức Trung" style="border-radius: 50%;">
+                    <figcaption>Hình 1: Ảnh đại diện cá nhân</figcaption>
+                </figure>
+                
+                <p>Tôi là sinh viên Năm 2 ngành Công nghệ thông tin. Tôi đam mê học hỏi các công nghệ web mới như HTML, CSS, JavaScript.</p>
+                <br>
+                <h3>Định nghĩa kỹ năng</h3>
+                <dl>
+                    <dt><strong>HTML5</strong></dt>
+                    <dd>Ngôn ngữ đánh dấu siêu văn bản dùng để dựng cấu trúc cho trang web.</dd>
+                    
+                    <dt><strong>CSS3</strong></dt>
+                    <dd class="highlight">Ngôn ngữ định kiểu dùng để thiết kế giao diện và trang trí trang web.</dd>
+                    
+                    <dt><strong>Git</strong></dt>
+                    <dd>Hệ thống quản lý phiên bản mã nguồn phân tán.</dd>
+                </dl>
+            </section>
+        </div>
+
+        <!-- Card 2: Section Kỹ năng (ul) & Lộ trình học tập (ol) -->
+        <div class="card">
+            <section>
+                <h2>Kỹ năng lập trình</h2>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Git &amp; GitHub</li>
+                    <li>JavaScript cơ bản</li>
+                </ul>
+                <br>
+                <h2>Lộ trình học tập</h2>
+                <ol>
+                    <li>Nắm vững nền tảng HTML5 và CSS3 cơ bản.</li>
+                    <li>Thực hành hoàn thiện các dự án website cá nhân.</li>
+                    <li>Học thêm JavaScript để làm trang web tương tác động.</li>
+                </ol>
+            </section>
+        </div>
+
+        <!-- Card 3: Bảng môn học có colspan ở tfoot -->
+        <div class="card">
+            <section>
+                <h2>Môn học trong học kỳ</h2>
+                <table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-top: 12px;">
+                    <caption>Bảng 1: Danh sách các môn học trong kỳ</caption>
+                    <thead>
+                        <tr style="background-color: #f1f5f9;">
+                            <th style="padding: 8px;">Tên môn học</th>
+                            <th style="padding: 8px;">Số tín chỉ</th>
+                            <th style="padding: 8px;">Điểm mục tiêu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 8px;">Lập trình Web</td>
+                            <td>3</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px;">Cấu trúc dữ liệu và giải thuật</td>
+                            <td>3</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px;">Cơ sở dữ liệu</td>
+                            <td>3</td>
+                            <td>B+</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr style="background-color: #f8fafc; font-weight: bold;">
+                            <td colspan="2" style="padding: 8px; text-align: right;">Tổng số tín chỉ:</td>
+                            <td>9</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </div>
+
+        <!-- Card 4: Bảng Thời khóa biểu có rowspan (Gộp ô chiều dọc) -->
+        <div class="card">
+            <section>
+                <h2>Thời khóa biểu (Nâng cao: Rowspan)</h2>
+                <table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-top: 12px;">
+                    <caption>Bảng 2: Lịch học các buổi trong tuần</caption>
+                    <thead>
+                        <tr style="background-color: #f1f5f9;">
+                            <th style="padding: 8px;">Thứ</th>
+                            <th style="padding: 8px;">Ca học</th>
+                            <th style="padding: 8px;">Môn học</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!-- Rowspan = 2 gộp 2 hàng chiều dọc cho Thứ 2 -->
+                            <td rowspan="2" style="padding: 8px; font-weight: bold;">Thứ 2</td>
+                            <td>Sáng</td>
+                            <td>Lập trình Web</td>
+                        </tr>
+                        <tr>
+                            <td>Chiều</td>
+                            <td>Thực hành Lập trình Web</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; font-weight: bold;">Thứ 4</td>
+                            <td>Sáng</td>
+                            <td>Cơ sở dữ liệu</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer dùng chung -->
+    <footer>
+        <address>
+            Email: <a href="mailto:ductrung@example.com">ductrung@example.com</a> | 
+            Điện thoại: <a href="tel:0123456789">0123 456 789</a>
+        </address>
+        <p>Lần cập nhật cuối: <time datetime="2026-06-01">01/06/2026</time></p>
+        <p>Bản quyền &copy; 2026 Le The Duc Trung. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

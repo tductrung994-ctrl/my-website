@@ -1,35 +1,74 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    
     <meta charset="UTF-8">
-    <title>Le The Duc Trung - Gioi thieu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Lê Thế Đức Trung | Website Cá Nhân CNTT</title>
+
+    <meta name="description" content="Khám phá trang chủ cá nhân của Lê Thế Đức Trung - Sinh viên Công nghệ thông tin. Xem hồ sơ, kỹ năng lập trình và định hướng nghề nghiệp phát triển phần mềm.">
+    
+    <meta property="og:title" content="Trang Chủ - Lê Thế Đức Trung | Website Cá Nhân CNTT">
+    <meta property="og:description" content="Khám phá trang chủ cá nhân của Lê Thế Đức Trung - Sinh viên Công nghệ thông tin.">
+    <meta property="og:type" content="website">
+    <!-- Nhúng Google Font (Inter) nâng cao Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Liên kết tới file CSS chung trong thư mục css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <h1>Le The Duc Trung</h1>
+    <!-- Header & Thanh điều hướng chung -->
+    <header>
+        <h1 id="main-title">Le The Duc Trung</h1>
+        <p>Sinh vien nganh Cong nghe thong tin - Rất vui được làm quen với bạn!</p>
+        <nav>
+            <a href="index.html">Trang chu</a> | 
+            <a href="about.html">Gioi thieu</a> | 
+            <a href="contact.html">Lien he</a> | 
+            <a href="https://github.com" target="_blank" rel="noopener">GitHub Repo</a>
+        </nav>
+    </header>
 
-    <h2>Thong tin ca nhan</h2>
-    <p>Ho va ten: <strong>Le The Duc Trung</strong></p>
-    <p>Que quan: Hung Yen</p>
-    <p>Nganh hoc: Cong nghe thong tin</p>
-    <p>Nam hoc: Nam 2</p>
-    <p>Mang xa hoi: <a href="https://facebook.com" target="_blank">Facebook cua toi</a></p>
+    <!-- Khối nội dung chính (Đã căn giữa bằng max-width & margin: 0 auto) -->
+    <main>
+        <!-- Card 1: Thông tin cá nhân tóm tắt -->
+        <div class="card">
+            <section>
+                <h2>Thong tin ca nhan</h2>
+                <!-- Sử dụng class highlight làm nổi bật -->
+                <p class="highlight">Ho va ten: <strong>Le The Duc Trung</strong></p>
+                <p>Que quan: Hung Yen</p>
+                <p>Nganh hoc: Cong nghe thong tin</p>
+                <p>Nam hoc: Nam 2</p>
+                <p>Mang xa hoi: <a href="https://facebook.com" target="_blank" rel="noopener">Facebook của tôi</a></p>
+            </section>
+        </div>
 
-    <h2>So thich</h2>
-    <ul>
-        <li>Lap trinh web</li>
-        <li>Nghe nhac</li>
-        <li>Cau long</li>
-    </ul>
+        <!-- Card 2: Sở thích cá nhân -->
+        <div class="card">
+            <section>
+                <h2>So thich</h2>
+                <ul>
+                    <li>Lap trinh web</li>
+                    <li>Nghe nhac</li>
+                    <li>Choi cau long</li>
+                </ul>
+            </section>
+        </div>
+    </main>
 
-    <h2>Muc tieu hoc ky nay</h2>
-    <ol>
-        <li>Nam vung HTML CSS</li>
-        <li>Hoan thanh cac du an</li>
-        <li>Dat diem cao</li>
-    </ol>
+    <!-- Footer dùng chung -->
+    <footer>
+        <address>
+            Email: <a href="mailto:ductrung@example.com">ductrung@example.com</a> | 
+            Điện thoại: <a href="tel:0123456789">0123 456 789</a>
+        </address>
+        <p>Lần cập nhật cuối: <time datetime="2026-06-01">01/06/2026</time></p>
+        <p>Bản quyền &copy; 2026 Le The Duc Trung. All rights reserved.</p>
+    </footer>
 
 </body>
-</html> 
+</html>

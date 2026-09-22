@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+h1 {
+    color: #1877f2;
+    text-align: center;
+}
+
+h2 {
+    color: #2e7d32;
+    border-bottom: 2px solid #2e7d32;
+}
+
+p {
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff0000;
+}
+/* Class selector */
+.highlight {
+    background: #fef3c7;
+    padding: 4px 8px;
+}
+
+/* ID selector */
+#main-title {
+    font-size: 2.2rem;
+    color: #8f96a3;
+}
+```[cite: 1]
+/* 1. Reset CSS cơ bản */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Body Typography & Background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* 3. Header Styling */
+header {
+    background-color: #1a2e5a;
+    padding: 16px 32px;
+    color: white;
+}
+
+/* 4. Main content layout (Căn giữa block element với max-width và margin: 0 auto) */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+/* 5. Card Component Styling & Box-shadow */
+.card {
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

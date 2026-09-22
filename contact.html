@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - Lê Thế Đức Trung | Gửi Form Phản Hồi</title>
+    
+    <meta name="description" content="Liên hệ ngay với Lê Thế Đức Trung bằng cách điền biểu mẫu phản hồi. Hợp tác học tập, hỗ trợ kỹ thuật và trao đổi thông tin cá nhân nhanh chóng qua form.">
+
+    <meta property="og:title" content="Liên Hệ - Lê Thế Đức Trung | Gửi Form Phản Hồi">
+    <meta property="og:description" content="Gửi tin nhắn liên hệ trực tiếp tới Lê Thế Đức Trung qua biểu mẫu liên hệ.">
+    <meta property="og:type" content="website">
+    <!-- Nhúng Google Font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- File CSS chung -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Nav chung của Website -->
+    <header>
+        <h1 id="main-title">Le The Duc Trung</h1>
+        <p>Sinh vien nganh Cong nghe thong tin</p>
+        <nav>
+            <a href="index.html">Trang chu</a> | 
+            <a href="about.html">Gioi thieu</a> | 
+            <a href="contact.html">Lien he</a> | 
+            <a href="https://github.com" target="_blank" rel="noopener">GitHub Repo</a>
+        </nav>
+    </header>
+
+    <!-- Nội dung chính -->
+    <main>
+        <div class="card">
+            <section>
+                <h2>Liên hệ với tôi</h2>
+                
+            
+                <form action="#" method="POST">
+                    
+                    
+                    <fieldset>
+                        <legend>Thông tin cá nhân</legend>                                   
+                        <div class="form-group">
+                            <label for="fullname">Họ và tên (*):</label>
+                            <input type="text" id="fullname" name="fullname" required minlength="2" placeholder="Nhập họ và tên">
+                        </div>                       
+                        <div class="form-group">
+                            <label for="email">Email (*):</label>
+                            <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại (*):</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" placeholder="0123456789" title="Số điện thoại phải chứa từ 10 đến 11 chữ số">
+                        </div>
+
+                        
+                        <div class="form-group">
+                            <label for="dob">Ngày sinh:</label>
+                            <input type="date" id="dob" name="dob">
+                        </div>
+
+                        <!-- YÊU CẦU 24 (Nâng cao): Thêm <datalist> gợi ý trường đại học: 3-4 tùy chọn -->
+                        <div class="form-group">
+                            <label for="university">Trường đại học:</label>
+                            <input type="text" id="university" name="university" list="university-list" placeholder="Chọn hoặc nhập tên trường">
+                            <datalist id="university-list">
+                                <option value="Đại học Bách Khoa">
+                                <option value="Đại học Công nghệ - ĐHQGHN">
+                                <option value="Đại học Quốc gia">
+                                <option value="Học viện Công nghệ Bưu chính Viễn thông">
+                            </datalist>
+                        </div>
+                    </fieldset>
+
+                    <!-- =========================================================================
+                         FIELDSET 2: NỘI DUNG LIÊN HỆ (Yêu cầu 17 & 19)
+                         ========================================================================= -->
+                    <fieldset>
+                        <legend>Nội dung liên hệ</legend>                        
+                        <div class="form-group">
+                            <label for="category">Mục đích liên hệ:</label>
+                            <select id="category" name="category">
+                                <option value="hotro">Hỗ trợ</option>
+                                <option value="hoctap">Học tập</option>
+                                <option value="khac">Khác</option>
+                            </select>
+                        </div>                      
+                        <div class="form-group">
+                            <label>Ưu tiên liên hệ qua:</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="priority" value="email" checked> Email</label>
+                                <label><input type="radio" name="priority" value="phone"> Điện thoại</label>
+                                <label><input type="radio" name="priority" value="zalo"> Zalo</label>
+                            </div>
+                        </div>                       
+                        <div class="form-group">
+                            <label for="message">Nội dung tin nhắn (*):</label>
+                            <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Nhập ít nhất 10 ký tự..."></textarea>
+                        </div>                      
+                        <div class="form-group checkbox-group">
+                            <label for="agree">
+                                <input type="checkbox" id="agree" name="agree" required>
+                                Tôi đồng ý cung cấp thông tin liên hệ (*)
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!-- NÚT CHỨC NĂNG (Gửi form & Test reset) -->
+                    <!-- YÊU CẦU 20: Test validation khi submit -->
+                    <!-- YÊU CẦU 21: Test reset -> nhấn Xoá -> tất cả field về trạng thái ban đầu -->
+                    <div class="button-group">
+                        <button type="submit" class="btn btn-submit">Gửi tin nhắn</button>
+                        <button type="reset" class="btn btn-reset">Xoá và nhập lại</button>
+                    </div>
+
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer chung -->
+    <footer>
+        <address>
+            Email: <a href="mailto:ductrung@example.com">ductrung@example.com</a> | 
+            Điện thoại: <a href="tel:0123456789">0123 456 789</a>
+        </address>
+        <p>Lần cập nhật cuối: <time datetime="2026-06-01">01/06/2026</time></p>
+        <p>Bản quyền &copy; 2026 Le The Duc Trung. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
